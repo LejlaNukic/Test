@@ -2,7 +2,13 @@ Rails.application.routes.draw do
 
   get '/roles/index', to: "roles#index"
 
+  get '/roles/new', to: "roles#new"
+
   post '/roles/create'
+
+  root 'roles#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
