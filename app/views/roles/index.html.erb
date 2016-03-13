@@ -1,3 +1,4 @@
 <% @roles.each do |r| %>
 <p> Naziv uloge:<%= r.title %></p><br>
 <% end %>
+<%= link_to "Dodaj ulogu", roles_new_path %>
