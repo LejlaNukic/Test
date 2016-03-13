@@ -1,0 +1,24 @@
+<% if flash[:error] %>
+
+<h1><%=flash[:error ]%></h1>
+<%end%>
+
+<%= form_for :user, url: users_path do |f| %>
+
+<%= f.label :name, "Ime" %>
+<%= f.text_field :name %>
+<br>
+
+<%= f.label :email, "mail" %>
+<%= f.text_field :email %>
+<br>
+
+<%= f.label :password, "password" %>
+<%= f.password_field :password %>
+<br>
+
+<%= f.label :password_confirmation, "potvrda passworda" %>
+<%= f.password_field :password_confirmation %>
+<br>
+<%= f.submit %>
+<% end %>
