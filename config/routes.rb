@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :users
+
   get '/roles/index', to: "roles#index"
 
   post '/roles/create'
